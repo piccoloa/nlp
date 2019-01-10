@@ -1,0 +1,647 @@
+The Active Directory iDataAgent provides granular backup and restore of individual Active Directory attributes.
+Plugins for Outlook, Vsphere, Vrealize, SQL Management Studio.
+Ability to integrate Edge Drive as a plug-in on the Kapost interface. Allows Kapost users to migrate their published content to Edge Drive and obtain a link to the content that the Kapost user can share
+Ability to show browse and recovery information in Windows explorer and MAC Finder
+Provides end users with the ability to view or download email messages that were archived from their mailboxes.
+Provides end users direct access to content indexed email messages from within the ContentStore by displaying a virtual folder view of the entire set of content.
+Provides end users with the ability to include large attachments to their email messages via links to attachments in ObjectStore.
+Provides ability perform Commvault backup and restore operations in the SQL Management Studio
+Ability to import SCOM Management pack which enables communcation between Commvault and SCOM software
+Provides ability associate VMs with a data protection policy, back up VMs on a scheduled or on-demand basis, and recover full virtual machines in place
+Provides recovery of virtual machines and files from within the vSphere Web Client
+Various advanced configuration that is defined in a software dictionary for fine tuning or customization of the software
+Ability to notify user of events that require attention or as mechanisms to take automated actions based on selected conditions
+Support for sending alert notifications to the CommCell Console
+Support for sending alert notifications via Email
+RSS feeds for Alerts
+Support for sending alert notifications via Microsoft System Center Operations Manager
+Support for sending alert notifications via Simple Network Management Protocol
+Support for sending alert notifications via Windows system log
+Support for initiating a workflow based on an alert condition
+Analytics on backed up and live Data for files and emails
+Ability to identify sensitve entities like SSN, DOB, Tel#, Address in email or file content
+This feature allows emaill data to be clustered into similar groups based on the topics that is being discussed in them.
+Ability to track activity on a web page, identify source information, the source device and customer engagement on a website.
+Web-based builder used to create customized applications
+App are a bundle of multiple component files along with the configuration that is required to publish and manage the components within Commvault Store or in the CommServe environment. An App usually comprises of a report as a primary component (UI component) and one or more supporting Workflows and other components.
+Ability to build a custom report using a web based builder
+Ability to utilize a workflow engine to automate business processes
+Application-aware backups capture the state of application data at the time of the backup, including data in memory and pending transactions, making it easier to restore the application for continued use. An application-aware backup for a virtual machine quiesces the application, flushes its memory, and completes pending writes, then creates a software snapshot of application data. After the software snapshot is created, the application resumes.
+Incorporating the backup and archiving processes in a single operation
+Ability to archive objects ondemand
+Ability to restore stubs to another plaform and retain stub recall functionality
+Ability to retain archived data using days criterion only
+Disk Cleanup by creating stubs in-place of, or by deleting the file, matching disk cleanup rules defined by user
+Ability to re-stub an archived file that was recalled
+Ability to keep more than one copy of an archived object
+Restore data of a file archiver stub
+Ability to remove stubs that are no longer required from source
+Ability to recall associated object by opening stub
+Ability to filter the backup of stub objects
+Ability to audit configuration changes
+Auto discovery of database instances
+Ability to run automation test cases via workflows in the product
+Ability to create secondary copies of backup data with need to update any index. Copies can reside on any type of media and does not need any form of staging to recovery from any type of storage type
+Ability to select random jobs and copy ignoring all rules
+Ability to create a deduplication copy on destination side without reading or transfering duplicated data
+Ability to create secondary copies in line with backup
+Ability read data from primary copy and create multiple copies in parallel
+Encrypt secondary copy with different encryption keys
+Ability to create a selective full copy based on time boundaries like daily, weekly, monthly etc.
+Ability to create a primary disk copy just to spool data to disk
+Optimizes tape usage
+Backup of various applications and files
+"1) For NAS NDMP backups the Backup External Link option is supported by the Hitachi NAS file server to specify how to handle links to offline files.<br />
+2) For Oracle backups, backup and recovery support for objects residing outside database or outside configured cloud storage referenced using external link."
+"1) For NAS NDMP backups the Backup Offline Data option is supported by the Hitachi NAS and DELLEMC VNX/Unity file servers. Use this option to include the original archived files in the backup, rather than the stubs created during the archive operation.<br />
+2) data protection of database with offline"
+Ability to backup application data in an application independent volume block aligned format for live operations like live mount of databases etc.
+sap oracle data and config file data protection
+Data only Backup support for Oracle databases where customer chooses to protect archive logs using replication or local copy (not recommended) methods.
+MySQL data protection using the SBT enterprise
+Backup and Recovery support for FULL database server for e.g: MSSQL Server, Sybase Server, Oracle CDB Instance, MySQL Server and PostgreSQL server.
+For NAS NDMP backups the Exclusive Backup option is supported by the Hitachi E-NAS file server. This option is used to prevent simultaneous execution of multiple backup or restore operations on the same volume. This option is useful to avoid possible data inconsistency which can be caused by running simultaneous backup and restore operations.
+"1) For NAS NDMP backups the Fast Incremental option is supported by DELLEMC Isilon file servers. When this option is selected the file server retains one or more snapshots to quickly determine changed data during incremental backups.<br />
+2) support for faster incremental backups using Commvault block change tracking or RMAN BCT technology."
+Ability to do forever incremental with a trueup job and periodic synthetic fulls
+Data protection and recovery for SAP HANA databases using HANA native interface and the jobs are marked as Application command line jobs in Commvault.
+Image Backupsets can be added under the NetApp NAS agent. Image backup sets will run NetApp block based Snapmirror-to-tape backup (smtape). Only full volume restores are possible from these backups but the restores are fast since they simply restore the blocks rather than laying out a new file system.
+Specify Commvault media parameters like storage policy and Data path for application commandline jobs using media parameters command line parameter.
+Multi-Streaming enables the subclient's contents to be distributed to all streams, transmitting them in parallel to the storage media
+Option to main a database of files modified for quick scan and backup. Database maintained either in SQLite or C-Tree. Supported on all significant FileSystem Backup platforms. Also called as Data Classification.
+Backup at Tablespace and data file level for databases.
+Protect highly transaction database logs using persistent log backup job that optimizes resource allocation in commvault.
+Backup and Restore support for  large Oracle database using IntelliSnap proxy backup mediaagent .feature.
+For the NAS NDMP backup agent, the Proxy MediaAgent option can be used to identify a set of MediaAgents which can connect to the file server to receive the backup data. If this option is not set, the MediaAgent associated to the storage policy is used to connect the file server client. This Proxy MediaAgent option should be used when the storage policy MediaAgent does not have connectivity to the file server. For example, a service provider’s MediaAgents may not have connectivity to the customers file servers.
+Backup support for standby databases  using Oracle replication.
+Data protection and recovery support using application on commandline interface. for e.g RMAN, DB2 and SAP HANA.
+In a 3-way NDMP setup, all data is sent from the machine being backed up to another machine which writes the data to backup media. That machine can be another NDMP capabile file server or can be a Commvault MediaAgent.
+Ability to save selected objects from mulitple source backed-up data into a separate copy for legal or retention purposes
+In a 2-way NDMP setup, the NAS filer is connected to a backup device (e.g. an LTO tape drive). The filer itself functions as a media agent and copies the data to a backup medium. Only management communication and file list information is sent over the network.
+Backup large databases using volume copy to support forever incremental and Synthetic FULL backups.
+FULL database server backup.
+Ability of software to be backward compatible with older version of commvault agents and older versions of applications
+Special file systems, relational databases or NoSQL systems that are typically large in size that reside on-premise or in cloud.
+Backup and Recovery support for Casandra databses.
+ability to backup scale out FileSystems such as Hadoop, GPFS, NFS, CIFS using multiple nodes
+Support GPFS native scan, native snapshot integration in multi-node configuration
+Automatic monitoring of GPFS filesystem by FSF driver on all participating node in a multi-node configuration
+OnePass archiving support for GPFS
+Integrated native snap support for GPFS
+Optimized scan for glusterFS using glusterfind and backup support in multi-node configuration
+Optimized scan for GlusterFS integrating with glusterfind command
+Backup and recovery support for Pivotal GreenPlum databases.
+Support for HDFS backup using Apache native C API in a multinode configuration
+HDFS backup and restore can be used to migrate
+Any file system backup is restorable to HDFS and vice-versa
+Lustre filesystem support with native optimized scan in a multi-node configuration
+Ability to brand all user interfaces for MSP etc.
+Ability to browse and recover data from Backup data
+Ability to do a find operation to find an file/email in backups
+Ability to live mount from backup/snapshot and do a browse to recover files/emails. Eg VM Live Browse, Database mount for exchange to recover emails etc.
+Ability to access backup data via UNC path. With Virtual Machines, this includes running the virutal machine directly from backup media.
+Ability to view multiple versions of a file and select which version to restore
+Ability to customize Commvault actions based on corporate business needs
+Configuration at Client, Instance, Backupset, Subclient levels used to manage backups
+Ability to group clients into logical groups and perform select bulk settings/operations like installing patches or running schedules
+Ability to automatically group clients into logical groups based on pre-defined rules. These rules can be dynamically imported and new rules created based on customer needs. New rules are delivered via software store
+Ability to clone policies like schedule policies for ease of configurations
+Various applications that are cloud native that is supported by Commvault.
+Data protection for Amazon RDS  instances and applications running on EBS volumes.
+Ability protect Amazon S3 buckets. This helps users to restore files on S3 bucket to another cloud or on-perm.
+Data protection and recovery for Azure BLOB storage.
+Ceph Object Storage backup
+Backup and restore solution for your Google mailboxes and drive files and folders
+protects data stored in Microsoft OneDrive for Business cloud storage
+Salesforce backup integration
+Ability to migrate a database to cloud like Amazon,Azure etc
+Migrate Oracle and SQL databases from on premises to cloud using Commvault.
+Migrate Oracle EBS Application and Database to cloud.
+Migrate Oracle and SQL databases from on premises to Oracle cloud.
+Commvault services available in the cloud
+Cloud account registration for cloud services and trials
+Ability to view overall wellness of a CommCell including status of backup opertions (SLA), software version, and disastery recovery settings
+Ability to estimate how much data protection the environment needs
+Ability to upload the CommServe databases to the cloud and run preupgrade checks to determine CommCell readiness for an upgrade
+Ability of commvault software to work on a clustered environment
+Ability to migrate and relevant data a client from one commcell to another
+Ability to host a Master Commcell in datacenter and have tenant commcells use this Master Cell as a DR commcell
+Ability to restore data from current commcell to a destination client in another commcell
+Ability to have multiple child pod-cells and continously migrate data to a parent commcell for central management and control
+Tool to catalog and restore magnetic library and cloud library data and restore them.
+Ability to import backups from Aged tapes
+Commvault Central Management server.
+Abitlity protect Commserver Database to recover commserver in case of a Commserver failure
+Ability to write a copy of DR backup to Commvault Cloud as an additional safe copy
+Ability to write a DR copy to any third party cloud without needing commvault to recover
+Ability to live sync commserver databse for high availability
+Ability to locally cache backups and then upload the data to Commcell when service connectivity to commcell is re-established. This allows for database log backups to run when commcell is being upgraded or under maintenance.
+Support of Commserver on Linux
+Various user interface
+Multi-tenant interface for tenant users to access backup as a service
+Command Line interface to manage Commvault software
+Commcell Console used to manage Commvault software
+Mobile interfaces used for end user access and commcell adminitrator (Commvault Edge & Commvault Now)
+Commvault Python SDK for end users and Devlopers so they can customize Commvault software functionality.
+Restful interface to program against Commvault software for integration into Business Applications
+way to set your preferences
+End user interface for endpoint users for self service
+Abiity to content index the content of a file or email server either via Backup or without backup
+Ability to replicate Servers to another server in a continous manner
+Replication at discrete intervals
+Ability to create corporate events and surveys to conduct group gathering or gather input via a user configurable survey that is integrated into Active Directory
+Ability to define a custom calandar for scheduling or data rentention based on Corporate financial calandar
+Data protection and recovery support for IBM DB2 Databases using streaming and IntelliSnap methods
+Data protection and recovery support for IBM DB2 DPF databases using streaming and IntelliSnap methods.
+Data protection and recovery support for DB2 databases setup for replication using DB2 HADR configuration.
+Offline database backup support for IBM DB2 databases. Customers would use this method when databases in not configured for archive logging or LOGARCHMETH1 is empty.
+Partial backup support for DB2 database.
+Commvault softwares database layer that can write to MSSQL, SQLLite, PostGres for storing metadata information
+Module responsible for managing aging of backup data based on retention rules
+Ability to specify Grandfather-Father-Son tiered retention for long term retention needs
+Ability extend retention of any random job to a specified date
+Ability for end user to secure their end point data by encrypting it with a pass-phrase to prevent data loss
+Ability to configure multiple storage nodes for backup targets in-order to scale out horizontally within the boundary of a Storage Policy. This is supported for Tape, Disk and Cloud and be a mix of storage devices within the same storage policy
+Ability to automatically restore/recover data from any storage policy copy
+Restore from storage target that is closest to Destination
+Ability to route data using multiple datapaths for balanced use of resources and improved performance
+You can setup pairing between the clients and the MediaAgents for data protection operations. This is beneficial when clients and MediaAgents do not have the Internet to retrieve their geolocation. In such a scenario, you can configure the paring to dedicate specific MediaAgents for data protection operations.
+Ability to automatically identify and restore/recover data from any configured library in the CommCell, even if the media is not available in the original library in which the data protection operation was performed
+Data Transport Mechanism used for tranporting backup/restore data
+Ability to ensure the integrity of data written during backup operations
+Ability to validate data read from media by comparing CRC generated during read to CRC generated during backup
+Ability to validate data during network transit by comparing CRC generated on source to CRC generated on destination
+Uses shared memory and threads for highest performance
+Uses threadpools and limits resources used for highest scale
+Ability to validate the backup data for corruption detection to ensure recoverability without actually doing a restore
+Ability to pull data from various sources into a Analytics Engine for purpose of Analytics or e-Discovery
+The CSV connector allows CSV files to be imported into the analytics index.
+The Eloqua connector allows data stored in Eloqua to be imported into analytics engine
+This federated feature allows to define a search handler which would allow search of data from different data sources
+The HTTP connector allows querying of data served by a HTTP end point and index them into the analytic engine
+The LDAP connector allows the AD domain data to be crawled and indexed into analytic engine
+The open data source API allows data to be ingested into the analytic index via programs and scripts.
+Twitter data source allows data to be queried from twitter and indexed into analytic engine
+Web site crawler data source crawls web sites and index the data into analytic index
+Ability to do record level archiving from various databases
+Database Archiving support for Oracle databases to move inactive data out of production database.
+Ability of commvault software to deduplicate backup data
+Ability to send unique block of data from client to mediaagent during backup so that network utilization is minimal during backup
+Operation used to protect the Deduplication Database to recover incase of a hardware failure or corruption
+Ability to move deduplciation partitions to different disks
+Ability to create multiple partitions for resiliency and scale
+Ability to recreate the Deduplication database by reading data from disk
+Verify deduplication database against disk to recovery from disk corruption
+Ability to create synthetic full without reading/transfering duplicated data over network
+To support defrag of disk and space recovery / Reclaim idle space on Mount Paths with no drill hole capability*
+Global Deduplication policies to help remote backup or deduplication across entire enterprise
+When Commserve DR restore happens CS DB moves back in time, making some of the archive files in DDB invalid. It is important to remove or mark the extra archive file based records in DDB as bad so that new backups will not refer them and result in a decryption failure if they were encrypted.
+Ability to make a tape copy of Deduplicated data without re-hydrating the data for Long term storage
+Ability to seed a remote copy to minimize initial base line transfer time for DASH Copy
+Allows fast recovery by using in Memory db for caching to optimize writes
+To support variable block size during Deduplication
+Ability to orchestrate failover or DR testing of Virtual Machines or Physical servers and applications associated with them.
+Failover Groups allows orchestration of the failover operations like planned failover, unplanned failover, test boot on a set of machines. The options include approval, priority of the client , script execution etc.
+Product Documentation
+Online Documention
+Context sensitive documenation
+Data Protection and Recovery of Documentum content server.
+"Backup  of Documentum Index server in Distributed content Server environment.<br />
+Restore of databases, Storage Areas, and Full-Text index in a Single or Distributed Server environment."
+data protection and recovery of documentum
+"Data protection and Recovery of DOcumentum with Oracle/FTI/Storage area:<br />
+<br />
+Backup of databases, Storage Areas, and Full-Text index in a Single or Distributed Server environment.<br />
+Restore of databases, Storage Areas, and Full-Text index in a Single or Distributed Server environment."
+Data protection and recovery of documentum with Oracle
+"Backup of databases, Storage Areas, and Full-Text index in a Single or Distributed Server environment.<br />
+Restore of databases, Storage Areas, and Full-Text index in a Single or Distributed Server environment."
+Various drivers that we have in the product eg FSDM
+Way to set up SMTP configuration
+Ability for Commvault software to encrypt data that is stored
+Ability to store application password used for backup/restores encrypted using Commserver specific key
+Ability for Commvault software to be used as key management for encryption
+Ability to engage with harwardware encryption technology to store data encrypted and manage its keys
+Ability to prevent user data from being accessed by Commcell Admins
+Ability to store encryption keys in a third party key management server for safe keeping (Safenet, KMIP, AWS)
+Events logged by the software and ability to view events and retain them
+Exchange Applications
+The Exchange Database Agent provides complete protection of entire Exchange databases for disaster recovery
+The Exchange Mailbox Agent is a comprehensive solution that incorporates separate archiving and cleanup operations. You can move mailbox messages to secondary storage and use these messages as an archive copy. Administrators and end users can easily and quickly retrieve archived messages.
+The Exchange Server backup agents provide a unified protection and recovery solution for all Exchange data in your enterprise, granular backup and recovery options are available for mailboxes.
+The Exchange Server backup agents provide a unified protection and recovery solution for all Exchange data in your enterprise, granular backup, stubbing and recovery options are available for mailboxes.
+Provides an end-user access from web console/content store based on delegation permissions.
+You can view archived messages on mobile devices that support an IMAP client
+importing your user mailboxes protected by the classic agent to exchange mailbox agent.
+Archiving of pst files and restoring as emails.
+Backup and recovery of public folder data.
+CVrecallmailbox utility will give an functionality to perform a mass recall of stubs created with different versions/agents.
+End user will get a functionality of message Reply from the Web Console
+Functionality to honor exchange retention policies for archived data.
+The ContentStore Mailbox provides SMTP-based journaling. Journaled messages are sent from any mail server to an external recipient using the SMTP protocol. In this case, the external recipient is a mailbox on the Commvault ContentStore Mail Server (SMTP).
+mining of exchange data from a snapshot
+backup and restore of exchange online environments
+Ability to import Legacy backup application meta data configuration into commvault
+Ability to selectively migrate Legacy backup application data into Commvault ContentStore
+Backup and restore of various File System data
+Backup (and restore) a regular FS file in extents - helps with faster backups via multi-streaming, quicker recall times and allows ACL-only backups, among other more specific use cases like for RAC aware HDFS.
+Support for arbitrary length file paths in backup, backup data browse, and restore
+Backup of file system based on modified time of the files
+Optimized hard link backups by backing up data once, declaring links to data in index, and ability to recreate links during restore
+Protecting full system for disaster recovery purposes
+Ability to define filters for backups and analytics jobs
+core product functionality which may not be a feature exposed outside Engineering
+Application to support GDPR regulation enforcement
+Support for Email Data in GDPR
+Support for File data in GDPR
+Other applications like OneDrive, Google drive etc.
+Finds a machines location by region lookups on the IP Address
+Getting started pages in Commcell Console used as a wizard for easy setup of product
+Ability to refresh the hardware which is running Commvault infrastructure or the application that is being protected
+Ability to backup and recover an application from old server to new server
+Commserver Hardware Refresh
+Migrate the storage target from older disk to new disk targets
+Ability to detect and use storage devices.
+Ability to take advantage of third party hardware-based deduplication features.
+Ability to write data across multiple file systems
+MediaAgent Hardware Refresh
+Support for various Tape, Storage and Snap storage vendors
+A sub-feature of HW Support where TSC tests and certifies HW vendor's HBA cards with Commvault.
+For support of HPE StoreOnce Catalyst library, a new data format had to be developed. This has a different mechanism compared to existing disk or cloud-based backups.
+A sub-feature of HW Support where TSC tests and certifies HW vendor's StandAlone Tape drives with Commvault.
+A sub-feature of HW Support where TSC tests and certifies HW vendor's Tape Libraries with Commvault.
+A sub-feature of HW Support where TSC tests and certifies HW vendor's Virtual Tape Libraries (VTL) with Commvault.
+Applications common in healthcare space
+Commvault Clinical Image Archiving allows to archive, search, and restore medical imaging data. All of the archived data is centrally located and accessible from any medical imaging endpoint using Commvault ObjectStore technology.
+A simplified web based viewer which enables to look at clinical images stored in ContentStore  using the standard web based rest apis.
+Dicom listener that can understand DICOM payload on the wire.   Primarily being used to translate DICOM oriented operations into object store oriented I/Os.
+
+"Support for InterSystem's Cache DB in IntelliSnap backups<br />
+Provide auto-discovery and ability to be able to backup whole instance or certain Cache DB by contents like %CACHE%.<br />
+Provide browse view based on Cache's DB, Install, Journal directory mapping"
+The Commvault IntelliSnap feature is integrated with MEDITECH to create consistent snapshots of MEDITECH databases across all MAGIC, client/server, and 6.x environments, and to back up the snapshots to disk, tape, or cloud for long-term retention
+Backup of IBM iSeries clients using a proxy
+Use of software VTL as a mean of transport of OS backup data from IBM i to storage media
+Indexing is the ability maintain a distributed index of the data objects and its meta data for recovery browse and analytics purpose
+Ability to relocate the index cache
+Ability to delete a backup data from the index so that it cannot be recovered
+Ability to periodically backup the index
+Ability to prune unnecesarry files from the index cache
+Ability to prune references to aged jobs from the index and reduce index size
+Ability to list the storage targets that has the data that has been selected for restores
+Backup and Recovery support for IBM Informix databases using XBSA specification.
+Business functions enabled by Commvault software
+Commvaults own Legal Document Management system built on top of CTE using AppStudio
+"Infrastruture tools for various engineering process
+https://engweb.commvault.com"
+Web based project plan
+Infrastructure tool to recut media kits
+Infrastructure tool to allow developers take snapshot of software
+Infrastructure tool to make updates
+Software Deployment
+Ability to create a custom package either on premise or via our cloud service for bulk deployment
+Ability to burn an image of our applcation on server during server imaging/provisioning and later dock to a Commcell.
+Support for various forms of native packages like DMG on MAC etc.
+Abiity to install our software on remote clients via the Commcell Console/Admin Console without logging into the server
+Ability to script install our software for integrating with software deployment tools like SCCM or Chef
+Job Management module
+Ability to disable/enable backup/restore/data aging at Client,clientgroup, backupset and subclient levels
+Various Job Management configuration available in Control Panel like Job Restarts etc.
+User interface seen in Commcell Console, ADminConsole, Mobile app to manage running jobs
+Abiity to retain history of jobs for an extended period
+Ability to configure a time window in which backup operations should run
+Set your holidays for job management
+Ability of jobs to restart from the point of failure without restarting from beginning
+A folder configured on each application server to host configuration files created during backup and recovery operations
+Various End point features
+A basic user interface to monitor backup activity to users laptop
+This is a client side appmgr cache for laptop solution. It will help scale laptop CS better as the appmgr calls will be sourced by the client itself rather than coming to the CS everytime a backup or any administrative task runs.
+Ability for laptop backups to write to cloud storage direct using a thin MediaAgent core package
+A Common cloud share to collobarate in a Team
+Ability to comment on files that are shared
+This is the laptop migration assistant. This is used when user gets a new device and if he owned some other device, the utility will help migrate user data from old device to new device.
+Ability to create a cloud drive for users to store their file data and collaborate with others
+Ability to monitor all file activity on Edge Drive
+Ability to download files
+Ability to edit files using Microsoft WOPI integration on webconsole
+Ability to view preview of files without downloading them
+Ability to upload files to edgedrive or laptop from browser
+A file sync feature that can sync backup data between devices
+Support for MAC native tags
+Ability to transfer backed up data from one Windows computer to another.
+Support for native browse of Photos application data in WebConsole
+Run scan on automatic schedule to find changed files, using cached subclient configuration
+Ability to share files from backup with other users for collaboration
+Ability to tag files shared
+Tool to upload files from endpoint to EdgeDrive
+Ability to automatically define backup content based on User access or device access
+This feature helps us discover owners for laptops from the client side. These owners are AD users.
+on demand edit of files in edge drive
+Software usage authorization
+Software usage billing
+Ability to have a single commcell manage licensing across multiple commcell. This can also be managed from Cloud.commvault.com
+Ability to license software usage based on component, capacity, or client access
+Ability to locally manage license usage acorss multi-CommCell environment.
+Boot up virtual machines directly from the backup.
+Before you can recover messages from an IntelliSnap /Block level backup, you create recovery points from which you can recover granular items.
+The Exchange Offline Mining Tool provides you with granular message recovery. You can mine data to restore mail messages, attachments, and other mailbox entities from an offline copy of an Exchange database. This includes standard mailbox databases and Public Folder databases.
+Ability to synchronize VMs, Databases or Files across servers
+Ability to synchronize VMs, Databases or Files across servers without needing to do a backup
+Ability to synchronize VMs, Databases or Files across servers without needing to do a backup by capturing changes at source as part of the IO stack
+Ability of Commvault software to support user interfaces, alerts in different languages
+Logs files maintained by our application
+Application to start / stop Commvault Services
+Ability to stream logs into Cloud.commvault.com for enhancement remote troubleshooting
+Ability to schedule or request logs
+Ability to view logs via Commcell Console or AdminConsole
+"An IBM Domino will include databases that are backed up by the IBM Domino iDataAgents:<br />
+<br />
+Notes Database<br />
+Notes Document<br />
+The IBM Domino iDataAgents provide backup and restore support for different kinds of data in what is often a mixed network environment."
+Domino Mailbox Archiver agent provides a seamless vehicle for moving old or infrequently used mailbox items to secondary storage
+Notes Database iDataAgent is designed to be used as a disaster recovery tool. Use this iDataAgent if your primary goal is full database recovery in the event of a database or system crash rather than small day-to-day restore jobs
+Notes Document iDataAgent is designed to protect individual documents of a database
+Migration of Lotus Notes data to Office 365.
+Managed Service Provider support
+Enforcing quota on backups
+Ability to create companies for each tenant
+Software download and distribution for MSP
+Ability to detect patterns and take approriate actions
+Ability to detect anomaly in file activity and alert end user
+Ability to use machine learning algorithms to detect anomaly in job runtimes and alert users
+Ability to use machine learning to detect anomaly in number of jobs that failed or succeded in a 24 hour interval
+Management of secondary store
+Support for EMC Centera Storage
+Ability to write to cold storage like Glacier
+Ability to write to Cloud Storage targets like AWS and 33 others
+Abiilty to use Cloud services that accelerate the transferring of large amounts of data
+Ability to copy data from disk location/format to cloud location/format
+Prevent unauthorized processes to access files (for Ransomware protection)
+Ability to multiplex data from multiple clients at the same time on Tape during backup
+Ability to use removable disk drives
+Ability to use removable disk devices that do not restain the operating system drive letter when they are disconnected
+Ability to use drive enclousure devices that retain a persistent drive letter but has changeable media.
+Support for Netapp Snaplock
+Ability to share drives and library across two commcell
+Support for Tape Library and Drives
+Using Expert storage configuration - Automatically create DDS Drive pools from If your library is attached to multiple Media Agents in a SAN environment.
+Ability to automatically detect and update new drive replaced within tape library.
+Ability to have job span across multiple tape cartridges.
+Ability to machine read, update, and create barcode patterns for physical identification of tape media
+Ability to utilize multiple tape drives within a drive pool.
+Ability to fail over or load balance between multiple HBAs
+Operation that ensures old data from tape media cannot be recovered once the media is recycled.
+This feature allows sharing library and drive between multiple commcells. Drives are reserved for and given out for use to multiple commcell sharing it.
+Ability to use more than one datapath to read/write backup data
+to consolidate data from different media into a set of newer media.
+Ability to detect and use standalone tape drives.
+SCSI reservation prevents multiple MA hosts within a SAN environment from accessing the same drive concurrently.  SCSI3 adds the benefits of Persistent Reservation.
+Support for HW vendors that offer disk-based devices that emulate a physical tape library.
+Ability to detect and use Write Once Read Many media type tape cartridges.
+Ability to manage tape import and export and locations for Commvault and Non-Commvault tapes
+Data Protection and Recovery of MongoDb Cluster contains Shared Servers/Rep Sets/Op logs and Config server.
+Backup and Recovery support for MySQl databases using streaming and IntelliSnap methods.
+NAS (Network Attached Storage) file servers can be protected in a variety of ways. The NAS NDMP agent can be used to run NDMP file based backups as well as IntelliSnap backup with NDMP backup copies. The Windows and UNIX File System Agents can be used to run SMB or NFS file based backups as well as IntelliSnap backups with SMB/NFS backup copies. OnePass can be used for archiving. System Monitoring is available for NetApp. And file analytics are available.
+System Monitoring can be used to monitor activity on NetApp file servers. Activity includes read, write, and delete operations.
+The NAS NDMP Agent provides a simplified end-to-end backup and recovery solution for the data residing on a NAS file server. In addition to complete protection of file system data for disaster recovery, the NAS NDMP Agent also provides more granular backup and recovery options that operate seamlessly with your data protection. The main backup protocol is used in this agent is NDMP for backup and backup copy.
+The Direct Access Recovery (DAR) feature allows the NDMP restore to seek to file offsets to restore the data rather than to read the entire backup image restoring the files as they are found. This DAR restore feature is useful when restoring up to approximately 40% of the backup image. If more than 40% of the backup is being restored, the restore is typically faster to not use DAR since streaming the read operation is faster than seeking to the individual file offsets.
+The Multi-Node feature allows multi-streamed NDMP backups to use multiple MediaAgents. Load balancing can be configured so that the destination for the data streams are spread across multiple MediaAgents. Similarly, when the file server is not accessible by the destination MediaAgent, a Proxy MA list can be configured at the subclient or agent level (http://documentation.commvault.com/commvault/v11/article?p=products/nas_ndmp/t_nas_proxy_ma.htm). Multiple proxy MAs will be chosen from this list to receive data from the file server to send to the destination MAs. These features are useful when a single MediaAgent is overloaded when backing up multiple streams.
+The Multi-Streaming feature enables multiple data streams per subclient for data protection operations. This feature allows backups of multiple paths in a subclient to run concurrently as part of the same job, thus reducing the total number of running jobs. Multiple content paths can be configured on a subclient by listing the paths individually or by using wildcards to identify multiple file systems to backup. For DELLEMC Isilon file servers, multiple streams can run inside a single subclient content path. The number of streams is determined by the number of data readers set on the subclient and the number of available resources in the assigned storage policy.
+See the documentation link for the list of supported NDMP vendors and features. The system requirements in the documentation lists the supported versions for each vendor - the supported versions are also listed in the online NDMP support matrix: https://ma.commvault.com/Support/CompatibilityMatrices
+Ability to rename Entities in the Commcell like Clients etc.
+Networking Capabilities in Commvault
+The Windows and UNIX File System Agent can be used to backup CIFS or NFS shares. Typically these agents are added under a NAS client for protecting the shares of that client. There are multiple Commvault features supported by this agent including multistream backups and the big data applications multi-node backup. Using multi-streams and multi-nodes can greatly increase the performance of file server data protection.
+Ability to retire aging/expensive filers and provide backed up data access via ObjectStore
+User of certificates to validate client communication authentication
+Ability to sepecify a backup network interface for backup operations
+Ability to work in various Firewal network toplogies
+Common configuration allowing all Commvault services and features to connect to the internet via direct HTTP or Proxy connection.
+Network throlling during backup, restore or Auxcopy operation to prevent network saturation
+Ability to transport third party application network data over Commvault Network tunnells without needing to open up additional ports
+Ability to allow end point devices uses commvault application as a VPN client to access corporate resources
+Commvault data storage repository used by third-party applications to store, manage, and retrieve application data as objects
+Ability to ingest/retrieve objectstore data using CDMI APIs
+Ability to write to Commvault Content Store using a File System interface on windows.
+Ability to ingest/retrieve objectstore data using File Transfer Protocol
+Understand HL7 oriented event triggers and translate them into supported DICOM actions.
+Ability to ingest/retrieve objectstore data using Jive APIs
+Object Store plugin for Kapost.
+Ability to ingest/retrieve objectstore data using NFS/CIFS protocol
+Provides backup and recovery support for Netezza
+Backup and restore Teradata database.
+Object Store plugin for Netsuite
+Ability to ingest/retrieve objectstore data using REST APIs
+S3 interface to write to Commvault ContentStore
+Using WebDAV, you can access your Edge Drive from any WebDAV supported client applications
+Cross organization health information sharing framework.  This layer contains the standard understanding of all XDS web service primitives and translate them into relevant ObjectStore I/O if necessary.
+Ability to ingest/retrieve objectstore data using iSCSI protocol
+"the Exchange Mailbox Agent is a comprehensive solution that incorporates separate archiving and cleanup operations<br />
+For Office 365 with Exchange environments, the Exchange Mailbox Agent uses Exchange Web Services (EWS) for archiving messages."
+Ability to migrate mailboxes from on-premises to O365
+Backup of OpenVMS clients via thin clients using a proxy
+ability to do full volume backup, restore volume, restore OS disk and boot from restored OS disk
+ability to use pre-post script for backup phases on client
+support for using openstack swift object storage as a cloud library
+Backup and Recovery support for Oracle Databases using streaming and IntelliSnap methodologies.
+Protect data on Oracle cloud Storage using a proxy,
+Backup and Recovery support for Oracle RAC databases using streaming and IntelliSnap methods.
+Oracle agent less backup using open backup API
+Hot backup support for Oracle when database is in use and archive logging is enabled.
+Ability to create plans
+Backup and Recovery support for PostgreSQL databases using streaming and IntelliSnap methods.
+Automatically bring up MediaAgent and client access nodes like VSA proxies hosted on cloud for operations like backup, restore, pruning etc
+Records Manager application for purpose of Document Management
+Various reporting tools available in the product
+Classic HTML reports that can be scheduled.
+Readiness report checks connectivity between all components required to run a backup/restore, eg. The client, Storage MediaAgents nodes, Deduplication Engines, Commserve, Index Server. It also checks for application readiness for Backup and Restores by validating application passwords and other configurations that are application specific.
+Various Database views pre-created on Commserver for integration with third party reporting tools
+Multi-commcel reports that be tiered or accessed via Cloud.commvault.com, also supports trending and long term historing data
+The Activity Report provides information about the success of backup operations over the last 16 days and 12 months, including strikes, largest clients, slowest clients, and most frequent errors over the last day.
+The Chargeback Report provides information about the size of backup jobs and the size and cost of data saved on storage media for each CommCell computer in your network.
+Dashboard gives a preview of the most critical information gathered from the CommCell computer
+Tiered Metrics Reporting is an optional configuration that allows you to forward collected report data to other Private Metrics Reporting Servers in your organization and to the Cloud Metrics Reporting Server.
+The Growth Trends Report includes several charts that display information about the media size, app size, and number of clients for entities such as CommCells, Agents, and Client Groups. Other charts display the amount of data used for Capacity Licenses and data stored in libraries.
+Health report in Private Metrics reports with ability to view overall wellness of a CommCell including status of backup operations (SLA), software version and disaster recovery settings
+The License Usage Report provides information about the number and types of Traditional, Capacity, and Client Access licenses used on CommCells. Information includes the percentage of capacity consumed, types of licenses used, and the number of users who consume licenses.
+"Set of reports being used by Managed Services Team. The page on cloud can be accessed here:
+
+https://cloud.commvault.com/webconsole/reportsplus/reportViewer.jsp?reportId=799
+
+Since we do not have a documentation page yet for this feature, we are keeping worldwide dashboard page as a placeholder for now in the doc link."
+The Peak Capacity Usage Growth Report displays information about license consumption over time and predicts license consumption in the future. This report can help you to plan and budget data protection costs for your organization.
+The Profile Dashboard provides direct interaction between customers and Technical Account Managers (TAMs) to troubleshoot problems and improve customer satisfaction. TAMs can use the Profile Dashboard to help manage CommCell environments for their customers. Customers can use Profile Dashboard to view Service Level Agreement (SLA), create tasks for Commvault employees, and record their satisfaction.
+The Recovery Point and Time Report displays the Recovery Point Objective (RPO), Actual Recovery Point (RPA), Recovery Time Objective (RTO), and the estimated Actual Recovery Time (RTA) for each client in all CommCell environments. This can help you to monitor the effectiveness of your disaster recovery settings and operations.
+The SLA (Service Level Agreement) Trend Report displays information about the percentage of SLA, over the last 12 months for each CommCell at the Worldwide and CommCell Group levels.At the CommCell level, the SLA Trend Report displays each subclient in the CommCell that failed to meet SLA, the reason for the failure, and the number of days over which the SLA percentage is calculated.
+You can configure reports to display only information that all users are allowed to view and mask information that should not be visible to all users. Hide file paths by replacing them with the text, "Masked Data."
+The CommCell administrator for the Cloud Services web site can associate additional users with any registered CommServe computer in their environment. After users are added, they can view reports for the CommCell environment on the Cloud Services web site.
+Additional reports available on Store.commvault.com
+Webconsole based Web based reports like SLA, Job Summary etc. Additional reports can be downloaded from software store
+You can export reports from Web Console and open or save them in CSV, HTML, and PDF formats.
+The Job Summary Report displays information about all backup and archive jobs that ran in the CommCell over the specified period of time. This report can help you to track data protection coverage for all clients in the CommCell.
+Generate Power Point presentations for Health, QBR and monthly reports from cloud.
+Restoring File system data
+Bare metal recovery of windows, unix and Linux servers
+cross server restore of the hana database
+Out of place restore support for Apps and FS on to a different server.
+Ability to restore the tenant database to destination server with different database name.
+Support for restoring Data only with database left in recovery pending state.
+cross server restore for SAP Oracle and HANA.
+Support for restoring archive logs only.
+Ability to covert from a VM to a Container
+Out of place restore for databases.
+Ability to convert from one hyper-Visor to another
+Restoring data in place
+Restoring the data using a map file
+Restore Files and Application data using multiple streams when possible.
+Restoring data to a different path on the source or to a path on different machine
+Partial restore of Database components like Tables, tablespaces and datafiles even when FULL Database or File System is backedup.
+support for scheduled restore to DR instance or Live Sync support.
+Object level restore support.
+Ability to recover a physical server as a VM (P-V)
+Commvault is integrated with SAP ArchiveLink Web Application Server for archiving documents and application documents entered in the SAP system.
+A set of Powershell modules that migrate the legacy Postgre based SAP Archive Link to Object Store based without incurring any data transfer.
+Backup and Recovery support for SAP databases running in Fujitsu Flexframe environment.
+Backup and Recovery support for SAP HANA databases using BRTools specification.
+Backup and Recovery support for SAP MAXDB databases using BRTools specification.
+Backup and Recovery support for SAP Oacrle databases using SAP brtools specification.
+Archive Log backup support for SAP Oracle databases using SAP BRTools specification.
+Data protection Using the BR*Tools using the UTIL_FILE or RMAN_UTIL interface to perform backups when you do not want to use the CommCell Console.
+Ability to recover the database using the online cons backup.
+A selective copy subclient includes the data, logs and control file. The advantage of a selective online full backup is that the data and logs use the same storage policy, which means that they reside on the same media and are self-contained for long-term archiving. You can use this in a disaster recovery, because you do not need to locate different media from multiple jobs to recover the database.
+Data protection and recovery support configured on standby database.
+Backup, replication and recovery support for SOLR and SOLR Cloud
+Data protection and recovery operations for SQL Server
+Data protection and recovery operations for SQL Azure and AWS SQL instances
+Support for Data protection and recovery operation for Availability Groups
+Support for data protection and recovery for SQL 2017 on Linux
+Scale related test cases and design consideration when creating a new feature
+Test cases related to performance testing and resource utilization
+Ability to manage resources required for a backup or restore operation to run to optimize utilization of secondary storage and servers
+This is equivalent to Message Queue with a major difference that message (work token) is guaranteed to be delivered. This means that when client comes online, the work token is pushed to the client.
+Scheduling ability of software
+Abiity to have smart schedules that can run when there is data to be backed up or when client has connectivity to server
+Ability to continously run jobs as soon as one job completes. Useful for archiving products
+Protection from unauthorized access
+Integration with Active Directory for SSO and using AD groups for management of commcell roles
+Integration with Okta, SAML, OpenID and other third party authentication systems
+Ability to define roles within the commcell
+Ability to define user and user groups to manage the commcell or control access to data
+Contains all Web security testcases needed to push traffic to scanner
+Platform-as-a-service (PaaS) provider of Service Management(SM) software for an enterprise
+Ability to use Service Now capability to initiate pre-defined backup or restore operations
+Ability to use configured alerts to trigger workflows for automatic maintenance ticketing.
+All Commvault Services that run on various platforms
+Tool to manage commvault services and monitor commvault processes
+Web service to serve all the REST API calls
+service for webconsole / admin console
+Sharepoint Application
+SharePoint database backup
+Sharepoint Document level backup/restore
+Multiple SharePoint nodes handling
+RBS allows to migrate rarely used files from content DB to lower-cost storage devices
+Allows access network file shares through a SharePoint site
+Sharepoint site collection backups/restore
+Ability to create and manage snapshots on various storage arrays for various applications to support backup, restore, backup copy, live browse and other various jobs
+Array Configurations are parameters associated with various snap engines and hardware arrays which are used to change the default behavior for snap operations. These are available at array, storage policy copy, client and subclient levels - each overriding previous level with subclient level takes final precedence.
+Array Controller is basically a MediaAgent designated as having management access to storage array to execute various snap operations. Array controllers are configured via Array Management.
+Ability to mount the hardware snapshot from storage array to a MedaAgent (mount host) and copy the data from the snapshot to either tape / disk / cloud libraries
+Clone is a RW copy of a snapshot used for cloning production databases for use-cases like DevTest, Data Mining, etc. A dedicated copy of the snapshot is created and the database is brought up on a designated mount proxies. These are sometimes called as Test Environments, DevTest Clones or Test Clones.
+Various connection protocols like FC, iSCSI, FCoE, NFS, CIFS supported by various storage arrays. For each engine and storage array, there are various supported connection protocols and sometimes some of them are not supported. These are listed on the IntelliSnap main support page.
+Ability to run the catalog phase of the backup job after the snap backup job. Previously data is cataloged as part of snap backup job and these can sometimes be resource intensive resulting in longer running snap backup jobs. By deferring the catalog phase to off-peak times, the snap backup jobs can be finished faster within backup window.
+Ability to replicate the snapshots taken on a storage array to another storage array and use these secondary snapshots for various jobs like deferred catalog, live browse, backup copy, restore, etc. This helps in offloading the production storage array from IOs happening as part of the above jobs without interfering production applications.
+Ability to take snapshots of the source volumes configured in Metro-Cluster High Availability configuration wherein the source volumes are present in two or more different storage arrays which are in mirror sync with each other to ensure High Availability in case of any storage failure. The snapshots are taken on all the participating storage arrays to ensure snap protection available across different datacenters for such metro volumes
+Fanned-in, simultaneous  replication of  locally attached disks/volumes from multiple windows and unix machines running Oracle/Exchange/SQL/FS using block level replication(checksum or driver based) to a single destination NetApp filer. A single NetApp hardware snapshot is created after all volumes are replicated successfully. This feature is known as OSDP and LREP too.
+"The CommServe database stores information about file server entities like volume, snapshot, and array name. When this information is renamed on the file server, the CommServe database will have invalid references to the previous names of these entities, which can cause snap operations to fail.<br />
+<br />
+The SnapManagement tool corrects the information about the file server entities stored in the CommServe database. One of the biggest advantages of using this tool instead of a QScript is that the SnapManagement Tool also performs array validation. During its operations, the tool accesses the array to discover the changes and then updates in the CommServe database with the new names.<br />
+<br />
+The tool does not update array entities on OnCommand Unified Manager (OCUM).<br />
+<br />
+Choose the SnapManagement command that you need:<br />
+<br />
+Renaming a volume<br />
+Renaming a snapshot<br />
+Renaming the array name"
+Proxy clients are basically MediaAgents which are used for mounting snapshots during deferred catalog backup copy, restore jobs. These hosts which should access to the data interfaces of the storage array to be able to mount the snapshot.
+Remote Snap MA is a MediaAgent which has access to storage array's management interface to execute various snap operations. Also it helps in avoiding to configure storage array libraries to interact with array and any gateway devices or command devices to send the control commands to storage array
+Ability to replicate the snapshots taken on a storage array to another storage array and use these secondary snapshots for various jobs like deferred catalog, live browse, backup copy, restore, etc. This helps in offloading the production storage array from IOs happening as part of the above jobs without interfering production applications.
+This feature provides offline hardware replication using NetApp's OCUM server
+Revert is a restore operation to move the source volumes to the previously taken point-in-time snapshots. This provides the ability to quickly restore the source volumes to a selected snap ensuring as little downtime for applications as possible.
+Ability to browse the data from a snapshot by mounting it on a mount host and even though catalog of the backed up data is not done as the catalog phase is deferred
+IntelliSnap engines are dynamically loadable plugins used to interact with storage arrays to execute various snap operations.
+Ability to restore data from a snapshot either to the source volumes used by the applications to recover from corruption or go back to an older time-in-point or as out-of-place restore on the same source client or different client. There are two restore options available - one by mounting the snapshot and moving the data blocks or by doing hardware restore on the storage array
+Out of place restore support from snap backup and backup copy jobs.
+Ability to mount the snapshot of NFS / CIFS snap backups to multiple hosts for backup copy jobs
+Ability to mount the hardware snapshot on a Windows or Linux VSA Proxy MediaAgent and completely by-passing the mount on ESXi server and then run backup copy, restore and other jobs.
+Ability to compress data before write
+Custom Reports,tools, workflows, alerts and media kits from Cloud
+These are smart client group (automatic association) rules that can are available with the product or can be distributed to the customer on demand.
+"We can define any matching rule based on generic sql statement and have alert based on those rules.<br />
+The documentation link below gives more information as to how we can provide queries."
+Sample reports for GDPR use case on report store.
+All media kits of Commvault software for various OEMs.
+"This is section of software store which is not downloadable by all customers.<br />
+Customers get access to these as part of SKU premimum ops SKUs."
+Product Customization that allows executing workflows or third-party applications directly from clietns or jobs in the CommCell Console
+Workflows are a graphical framework you can use to automate a business process by putting together a set of tasks in a specific order. Workflows help you automate both CommCell tasks and external tasks
+Ability to monitor freepsace on volumes on application servers and send alerts if it is running low on space
+Provide a way to protect and recover Splunk buckets.
+Policy to manage secondary storage of backups
+Scale out storage created from a pool if local attached disk on MediaAgent via DataServer IP or DataServer FC
+Ability to share local storage on a Linux MA via FibreChannel connection to that MA
+Ability to deploy and use GlusterfS node as Hyper-converged nodes for MediaAgents and storage
+Ability to share local storage on MA via Commvaults native Data Transport technology without using NFS/CIFS protocol
+The Storage Provisioning feature provides allocation of storage on various disk arrays from a single Commvault interface. This storage can be used for magnetic library space, disks for virtual machines, disks for application testing, etc. Each user can manage their own storage. Expiration dates can be set so the space is automatically reclaimed.
+The Storage Provisioning feature uses Provisioning Policies to define different ways to provision storage. The Provisioning Policy identifies a quota, expiration date, a set of disk arrays to provision from, and the users who have access to that policy. These policies can be used to control access to different types of arrays and/or different storage speeds.
+Ability replicate storage from one share to another
+A Filesystem configuration policy for enforce a backup policy across multiple File Servers
+Backup and Recovery support for SAP Sybase databases.
+Ability to synthesize a full from prior incremental backups and full to facilitate selective copy, tape out or long term retention. Also used for space reclamation for Deduplication
+Ability to monitor system parameter/performance, logs and file activity
+Monitoring file activity on servers (Windows, MAC, NAS, Linux)
+Ability to capture logs into Log Monitoring index for long term retention
+Monitor and analyze log data from multiple data sources
+Monitoring for Resource utilization on server, Hyper-V for CPU, Memory, Threads, sockets etc
+Timezone support for DataAging and Scheduling operations
+Problem detection, analysis and resolution
+Ability to configure a time window in which backup operations should run
+Collection of workflows and reports that help customer self-heal/ fix issues in their environment without calling in support.
+Ability to trigger send log files from cloud.commvault.com
+Enhancements and corrections to the software
+Ability to validate upgrade in cloud
+Weekly hotfix packs
+Critical updates available on demand via Cloud Sharing
+Quarterly service packs
+Backup and restore of HyperVisors of various Vendors
+Backup and Restore support for Alibaba Cloud
+Backup and Restore Support for Amazon EC2
+Application Agent integration with Virtual Server Agent backups
+Backup and Restore support for Azure Virtual Machines
+Azure Stack
+Track the changes that occur within a VM to optimize incremental backups
+Support for backup and restore of docker containers
+Ability to restore individual files from a Full Virtual machine backup
+Support for Huawei's FusionCompute Hypervisor
+Support for Google Cloud
+Backup and Restore support for Microsoft Hyper-V
+Backup and restore support for Kubernetes containers
+"Back up and recover virtual machines (VMs) that are hosted in a cluster for the Nutanix Acropolis Hypervisor (AHV). <br />
+Nutanix AHV supports streaming backups and IntelliSnap backups."
+Commvault  provides data protection and recovery for instances or images running on Openstack private cloud. Supports streaming crash consistent backups only.
+Backup and Restore support for OracleCloud
+Support for the OracleVM hypervisor
+Ability to provision VMs for Dev/Test, LiveSync or other usecases in various HyperVisor technology or creation of Containers
+Backup and Restore support for Red Hat Virtualization
+VMware Virtual Disk Development kit to support NBD, HOTADD and SAN access to VMDK files
+Backup and Restore support for VMware vSphere
+VMware Cloud on AWS
+Support for vCloud
+VMware virtual san support
+VMware virtual volumes
+Support for XenServer Hypervisor
+Support for e-Discovery related features
+Ability to put files/emails into a legal hold and make copies for legal retention
+Ability to archive social/financial data through Globanet connectors into ContentStore Mailbox and prepare it for eDiscovery
+Ability to create a object level selective copy of data from various clients for purpose of legal retention or long term storage
+Ability to archive SMS/MMS through Telemessage connectors into ContentStore Mailbox and prepare it for eDiscovery
