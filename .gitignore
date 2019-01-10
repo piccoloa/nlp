@@ -1,2 +1,6 @@
-/notebooks/**
+notebooks/**
 test.txt
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
